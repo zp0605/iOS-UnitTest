@@ -1,0 +1,10 @@
+PODS:
+  - RCFlatUIKitColor (1.0.0)
+
+DEPENDENCIES:
+  - RCFlatUIKitColor (~> 1.0)
+
+SPEC CHECKSUMS:
+  RCFlatUIKitColor: 34cb15f70436b119974bc7489404c86c59db5e56
+
+COCOAPODS: 0.37.2

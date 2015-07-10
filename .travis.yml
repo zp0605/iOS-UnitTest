@@ -1,0 +1,4 @@
+language: objective-c
+script: 
+  -xctool test -workspace TDD.xcworkspace -scheme TDDTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  -xctool -workspace TDD.xcworkspace -scheme TDDTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
