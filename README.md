@@ -5,7 +5,7 @@ Integrate Travis Cl for Xcode Project (beta)
 
 ```
 language: objective-c
-osx_image: beta-xcode6.3
+osx_image: xcode6.4
 script: 
 - xctool -workspace TDD.xcworkspace -scheme TDDTests -sdk iphonesimulator 
 - xctool test -workspace TDD.xcworkspace -scheme TDDTests -sdk iphonesimulator 
