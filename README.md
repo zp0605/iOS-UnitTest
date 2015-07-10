@@ -2,9 +2,6 @@
 
 # iOS-UnitTest
 Integrate Travis Cl for Xcode Project (beta)
-![](http://i.picasion.com/resize80/158e926cddb5486dbf4e2b45b7947cb6.png)
-
-Build Fail reason is for iOS SDK CI incompatable! 
 
 ```
 language: objective-c
