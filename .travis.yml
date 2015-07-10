@@ -1,4 +1,5 @@
 language: objective-c
+osx_image: beta-xcode6.3
 script: 
 - xctool -workspace TDD.xcworkspace -scheme TDDTests -sdk iphonesimulator 
 - xctool test -workspace TDD.xcworkspace -scheme TDDTests -sdk iphonesimulator 
