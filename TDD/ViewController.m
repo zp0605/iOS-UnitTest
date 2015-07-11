@@ -14,14 +14,19 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+- (NSString *)reverseString:(NSString *)originalString {
+    NSMutableString *reversedString = [NSMutableString stringWithCapacity:[originalString length]];
+    
+    [originalString enumerateSubstringsInRange:NSMakeRange(0,[originalString length])
+                                       options:(NSStringEnumerationReverse | NSStringEnumerationByComposedCharacterSequences)
+                                    usingBlock:^(NSString *substring,
+                                                 NSRange substringRange,
+                                                 NSRange enclosingRange, BOOL *stop) {
+                                  
+                                        [reversedString appendString:substring];
+                              }];
+    return reversedString;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end
